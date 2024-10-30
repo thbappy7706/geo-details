@@ -1,0 +1,19 @@
+{
+  "name": "thbappy7706/geo-details",
+  "description": "A simple and intuitive PHP package for retrieving geolocation details from an IP address, including latitude, longitude, timezone, currency, and more.",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "GeoDetails\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^8.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "minimum-stability": "stable",
+  "license": "MIT"
+}
