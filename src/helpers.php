@@ -33,3 +33,20 @@ if (!function_exists('getCurrency')) {
         return $geoLocationService->getCurrency($ip);
     }
 }
+
+if (!function_exists('getCountryName')) {
+    function getCountryName($ip)
+    {
+        $geoLocationService = new GeoLocationService();
+        return $geoLocationService->getCountryName($ip);
+    }
+}
+
+
+if (!function_exists('getCountryCapital')) {
+    function getCountryCapital($ip)
+    {
+        $geoLocationService = new GeoLocationService();
+        return $geoLocationService->getCountryCapital($ip);
+    }
+}
