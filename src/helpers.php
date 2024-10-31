@@ -50,3 +50,11 @@ if (!function_exists('getCountryCapital')) {
         return $geoLocationService->getCountryCapital($ip);
     }
 }
+
+if (!function_exists('getIspName')) {
+    function getIspName($ip)
+    {
+        $geoLocationService = new GeoLocationService();
+        return $geoLocationService->getIspName($ip);
+    }
+}

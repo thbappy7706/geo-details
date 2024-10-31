@@ -74,4 +74,11 @@ class GeoLocationService
         $details = $this->getDetails($ip);
         return $details['error'] ?? null ? null : $details['country_capital'];
     }
+
+
+    public function getIspName($ip)
+    {
+        $details = $this->getDetails($ip);
+        return $details['error'] ?? null ? null : $details['org'];
+    }
 }
